@@ -25,6 +25,10 @@ const slider = tns({
   autoplay: false,
   controls: false,
   nav: false,
+  preventScrollOnTouch: 'auto',
+  speed: 1200,
+  autoplay: true,
+  autoplayButtonOutput: false
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
