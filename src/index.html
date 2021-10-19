@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <section class="promo">
+  <section id="up" class="promo">
     <div class="container">
       <div class="header">
         <a href="#" class="header__logo">
@@ -64,7 +65,7 @@
           Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
         </div>
         <div class="benefits__item">
-          <img src="icons/benefits/heart.png" alt="heartbeat">
+          <img src="icons/benefits/heart.png" alt="heartbeat" class="benefits__icon benefits__icon_animated">
           <span>Заботимся о здоровье</span>
           Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
         </div>
@@ -377,9 +378,9 @@
 
   <section class="review">
     <div class="container">
-      <h2 class="title title__review">Каталог пульсометров</h2>
+      <h2 class="title title__review">Отзывы клиентов</h2>
       <div class="review__comments">
-        <div class="review__item">
+        <div class="review__item wow animate__animated animate__backInUp data-wow-duration='2s' data-wow-delay='1s'>
           <img src="img/rewiews/irina.png" alt="">
           <div class="review__comment">
             <div class="review__name">Ирина Иванченко</div>
@@ -397,7 +398,7 @@
 
           <hr>
 
-          <div class="review__item">
+          <div class="review__item wow animate__animated animate__backInUp data-wow-duration='2s' data-wow-delay='1s'>
             <img src="img/rewiews/ivan.png" alt="">
           <div class="review__comment">
             <div class="review__name">Иван Сёмочкин</div>
@@ -412,7 +413,7 @@
 
           <hr>
 
-          <div class="review__item">
+          <div class="review__item wow animate__animated animate__backInUp data-wow-duration='2s' data-wow-delay='1s'>
             <img src="img/rewiews/julia.png" alt="">
           <div class="review__comment">
             <div class="review__name">Юлия Дашкина</div>
@@ -475,10 +476,16 @@
   </div>
 </div>
 
+<a href="#up" class="pageup">
+  <img src="icons/chevron-circle-up-solid.svg" alt="up" >
+</a>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
